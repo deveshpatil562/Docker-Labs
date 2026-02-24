@@ -136,6 +136,7 @@ Default runtime command.
 
 ## 📸 Screenshot
 
+<img width="1577" height="831" alt="task2" src="https://github.com/user-attachments/assets/e56ca0ff-d9ab-4cc5-a98b-74ee75d264c4" />
 
 
 ---
@@ -205,9 +206,9 @@ Arguments get appended.
 
 ## 📸 Screenshot
 
-```
-images/task3-cmd-vs-entrypoint.png
-```
+<img width="1561" height="587" alt="task3-1" src="https://github.com/user-attachments/assets/22671025-bf56-4c4e-9991-1d7296802b5e" />
+
+<img width="1550" height="650" alt="task3-2" src="https://github.com/user-attachments/assets/8383ded4-3922-4069-881c-782c2e0fb336" />
 
 ---
 
@@ -266,9 +267,10 @@ http://localhost:8080
 
 ## 📸 Screenshot
 
-```
-images/task4-nginx-output.png
-```
+<img width="1576" height="671" alt="task4-1" src="https://github.com/user-attachments/assets/cdacb557-2d2a-416a-bb49-20ae894bc497" />
+
+<img width="1886" height="828" alt="task4-2" src="https://github.com/user-attachments/assets/3cb43eca-164b-47e1-8925-4e15c9a73432" />
+
 
 ---
 
@@ -306,9 +308,8 @@ Verify ignored files are not included.
 
 ## 📸 Screenshot
 
-```
-images/task5-dockerignore.png
-```
+<img width="1582" height="721" alt="task5" src="https://github.com/user-attachments/assets/b75e5619-5e6e-499e-9306-231b12efa498" />
+
 
 ---
 
@@ -366,11 +367,8 @@ Now dependencies stay cached unless base changes.
 
 ## 📸 Screenshot (Cache Demo)
 
-Add your highlighted build output screenshot:
+<img width="1567" height="840" alt="task6" src="https://github.com/user-attachments/assets/ae4a026c-bb9f-46f7-8f3a-5fde1c2f91ad" />
 
-```
-images/task6-cache-demo.png
-```
 
 ---
 
