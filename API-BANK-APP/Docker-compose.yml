@@ -1,0 +1,40 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: bankapp
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/bankdb
+      - SPRING_DATASOURCE_USERNAME=bankuser
+      - SPRING_DATASOURCE_PASSWORD=bankpass
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - banknet
+
+  db:
+    image: mysql:8.0 
+    container_name: bankdb
+    environment:
+      - MYSQL_DATABASE=bankdb
+      - MYSQL_USER=bankuser
+      - MYSQL_PASSWORD=bankpass
+      - MYSQL_ROOT_PASSWORD=rootpass
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u bankuser --password=bankpass"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - banknet
+volumes:
+  db_data:
+networks:
+  banknet:
+    
